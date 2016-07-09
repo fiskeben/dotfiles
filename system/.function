@@ -1,0 +1,4 @@
+# Highlight words in output
+colorgrep() {
+   egrep --color "$1|$" $2
+}
