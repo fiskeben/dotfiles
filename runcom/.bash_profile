@@ -4,6 +4,11 @@ do
     [ -f "$DOTFILE" ] && source "$DOTFILE"
 done
 
+for OVERRIDE_DOTFILE in `find ~/dotfiles/local`
+do
+    [ -f "$OVERRIDE_DOTFILE" ] && source "$OVERRIDE_DOTFILE"
+done
+
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi

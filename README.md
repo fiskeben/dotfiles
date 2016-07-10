@@ -11,6 +11,12 @@ Currently these files expect to exist in `~/dotfiles`.
 Run `install.sh` which will create a symlink to `.bash_profile` and `.inputrc`
 in your home directory.
 
+### 🙈  Local variations
+
+If it's necessary to set local values that don't belong in the base installation
+(say, work related environment variables), create a folder names `local` and
+create files in that directory as needed.
+
 ## 👍  Credits
 
 The layout, scripting, aliases, functions, and more is based on [Lars Kappert's
