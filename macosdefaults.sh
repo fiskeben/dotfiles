@@ -8,6 +8,12 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until script has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+# Add user to `wheel` group
+sudo dseditgroup -o edit -a `whoami` -t user wheel
+
+# Make `/usr/local` writeable by group (for Homebrew)
+sudo chmod -R g+w /usr/local
+
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
