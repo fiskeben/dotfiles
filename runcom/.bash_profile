@@ -14,5 +14,7 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
+    GIT_PROMPT_THEME=Default
     source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
 fi
+
