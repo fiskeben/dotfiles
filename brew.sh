@@ -41,5 +41,16 @@ brew install homebrew/dupes/openssh
 
 brew install git
 
+# Casks
+brew tap caskroom/cask
+
+brew cask install atom
+brew cask install google-chrome
+brew cask install spotify
+brew cask install dash
+brew cask install slack
+brew cask install docker
+
+
 # Remove outdated versions from the cellar.
 brew cleanup
