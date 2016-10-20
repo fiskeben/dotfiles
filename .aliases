@@ -6,6 +6,9 @@ alias ...="cd ../.."
 # Recursively remove .DS_Store files
 alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
 
+# It's all in the name...
+alias fucknpm="rm -r ./node_modules && npm install"
+
 # Copy to clipboard without newline
 alias copy="xargs echo -n | pbcopy"
 
