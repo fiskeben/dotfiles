@@ -23,6 +23,7 @@ apm install pigments
 apm install open-recent
 apm install todo-show
 apm install react
+apm install advanced-open-file
 
 apm install linter
 apm install linter-eslint
