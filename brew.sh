@@ -50,7 +50,8 @@ brew cask install spotify
 brew cask install dash
 brew cask install slack
 brew cask install docker
-
+brew cask install java
+brew cask install jce-unlimited-strength-policy
 
 # Remove outdated versions from the cellar.
 brew cleanup
