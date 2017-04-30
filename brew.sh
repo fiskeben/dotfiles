@@ -34,12 +34,16 @@ fi;
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
+brew install tree
+
 # Install more recent versions of some macOS tools.
 brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 
 brew install git
+
+brew install golang
 
 # Casks
 brew tap caskroom/cask
