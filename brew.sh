@@ -56,6 +56,8 @@ brew cask install slack
 brew cask install docker
 brew cask install java
 brew cask install jce-unlimited-strength-policy
+brew cask install dbeaver-community
+brew cask install ngrok
 
 # Remove outdated versions from the cellar.
 brew cleanup
