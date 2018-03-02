@@ -21,3 +21,4 @@ if [ -f "$(brew --prefix)/opt/git/etc/bash_completion.d/git-prompt.sh" ]; then
     source "$(brew --prefix)/opt/git/etc/bash_completion.d/git-completion.bash"
 fi
 
+export PATH="/usr/local/opt/curl/bin:$PATH"
