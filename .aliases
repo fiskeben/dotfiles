@@ -12,3 +12,6 @@ alias fucknpm="rm -r ./node_modules && npm install"
 # Copy to clipboard without newline
 alias copy="xargs echo -n | pbcopy"
 
+alias k=kubectl
+
+alias g=git
