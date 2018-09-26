@@ -22,12 +22,18 @@ if [ -d "$(brew --prefix)/etc/bash_completion.d" ]; then
     source_if "aws_bash_completer"
     source_if "helm"
     source_if "kops"
+
 fi
 
 if [ -f "$(brew --prefix)/opt/git/etc/bash_completion.d/git-prompt.sh" ]; then
     GIT_PROMPT_THEME=Default
     source "$(brew --prefix)/opt/git/etc/bash_completion.d/git-prompt.sh"
     source "$(brew --prefix)/opt/git/etc/bash_completion.d/git-completion.bash"
+
+    __git_complete g __git_main
+    __git_complete gc _git_checkout
+    __git_complete gm __git_merge
+    __git_complete gp _git_pull
 fi
 
-export PATH="/usr/local/opt/curl/bin:$PATH"
+export PATH="/usr/local/opt/curl/bin:/usr/local/sbin:$PATH"

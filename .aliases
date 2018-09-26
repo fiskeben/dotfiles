@@ -15,3 +15,9 @@ alias copy="xargs echo -n | pbcopy"
 alias k=kubectl
 
 alias g=git
+alias gc="git checkout"
+alias gs="git stash"
+alias gsp="git stash pop"
+alias gm="git merge"
+alias gp="git pull -r"
+
