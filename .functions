@@ -32,3 +32,11 @@ extract() {
      echo "'$1' is not a valid file to extract"
   fi
 }
+
+# Go test and coverage
+cover () {
+    local t=$(mktemp -t cover)
+    go test $COVERFLAGS -coverprofile=$t $@ \
+        && go tool cover -func=$t \
+        && unlink $t
+}
