@@ -50,6 +50,7 @@ brew cask install docker
 brew cask install java
 brew cask install dbeaver-community
 brew cask install ngrok
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package quicklookase qlvideo
 
 # Remove outdated versions from the cellar.
 brew cleanup
