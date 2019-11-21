@@ -13,11 +13,25 @@ alias fucknpm="rm -r ./node_modules && npm install"
 alias copy="xargs echo -n | pbcopy"
 
 alias k=kubectl
+ksn() {
+    kubectl config set-context --current --namespace=$1
+}
 
 alias g=git
 alias gc="git checkout"
-alias gs="git stash"
+alias gs="git status"
+alias gst="git stash"
 alias gsp="git stash pop"
 alias gm="git merge"
 alias gp="git pull -r"
 
+alias dcu="docker-compose up"
+alias dcd="docker-compose down"
+
+dcb() {
+    docker-compose build $@
+}
+
+clip() {
+    cat $1 | pbcopy
+}
