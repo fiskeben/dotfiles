@@ -54,6 +54,9 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write -g InitialKeyRepeat -int 10
 defaults write NSGlobalDomain KeyRepeat -int 1
 
+# Remove the accented character popup
+defaults write -g ApplePressAndHoldEnabled -bool false
+
 ###############################################################################
 # Screen                                                                      #
 ###############################################################################
